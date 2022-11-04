@@ -12,7 +12,12 @@
         <tr *ngFor = "let p of products">
           <td>{{p.id}}</td>
           <td>{{p.name}}</td>
-          <td>{{p.price}}</td>
+          <td>{{p.price}}
+          <td>
+            <button (click) = "handelDeletProduct(p)" class="btn btn-danger">
+              <i class = "bi bi-trash"></i>
+            </button>
+          </td>
         </tr>
         </tbody>
       </table>

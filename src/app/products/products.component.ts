@@ -16,9 +16,11 @@ export class ProductsComponent implements OnInit {
   {id:2, name :"computer3", price : 200},
   {id:3, name :"computer4", price : 300},
   {id:4, name :"computer5", price : 400},
-
-
-  ]
+  ];
   }
+        handelDeletProduct( p : any){
+          let index = this.products.indexOf(p); //position objet
+          this.products.splice(index,1);
+        }
+ }
 
-}
